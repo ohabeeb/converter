@@ -5,20 +5,25 @@
     input.addEventListener("keyup",myResult);
     result.addEventListener("keyup",myResult);
     // result2.addEventListener("keyup",myResult);
-
-
+    
 function myResult(){
 	// result.value = input.value;
 	// input.value = result.value;
 
-      result.value = input.value * 0.01;
-      // input.value = result.value * 100;
+     if (result.value == input.value ) {  
+ 		result.value = input.value *0.01;
 
-      // result2.value = input.value  * 0.01;
-      var result2 = document.getElementById("result2").innerHTML
-       = input.value + " cm = "  +  result.value + " m "; 
+ 		var result2 = document.getElementById("result2").innerHTML
+      = input.value + " CM = " +  result.value + " M "
 
-};
+ 	}else if(input.value === result.value) {
+
+ 		input.value = result.value *100;
+ 	
+ 	}
+ };
+
+ 
 
 
 
