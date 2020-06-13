@@ -10,13 +10,13 @@ function myResult(){
 	// result.value = input.value;
 	// input.value = result.value;
 
-     if (result.value == input.value ) {  
+     if (result.value = input.value ) {  
  		result.value = input.value *0.01;
 
  		var result2 = document.getElementById("result2").innerHTML
       = input.value + " CM = " +  result.value + " M "
 
- 	}else if(input.value === result.value) {
+ 	}else if(input.value = result.value) {
 
  		input.value = result.value *100;
  	
